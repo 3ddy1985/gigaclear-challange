@@ -12,7 +12,7 @@ The main objective of this challenge is to test your skills in Frontend Developm
 After clone/download project execute:
 
 ```
-yarn
+yarn 
 ```
 or
 ```
