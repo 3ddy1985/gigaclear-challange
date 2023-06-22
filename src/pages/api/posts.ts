@@ -8,7 +8,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
     const { method, query: { id } } = req;
 
     switch (method) {
-        case "get":
+        case "GET":
             if (id) {
                 const post = posts.find(post => post.id === id);
 
