@@ -1,0 +1,65 @@
+.postWrapper
+    width: 90%
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+
+.postWrapper > h1
+    width: 85%
+    margin-left: auto
+    margin-right: auto
+
+.postWrapper > p
+    width: 65%
+    margin-left: auto
+    margin-right: auto
+
+.postImage
+    width:95%
+    border-radius: 1rem
+
+.marginTopBottom
+    margin: 2rem 
+
+.eventContainer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 95%
+    margin-left: auto
+    margin-right: auto
+
+.eventDetails
+    text-align: left
+
+.flexRow 
+    display: flex
+    justify-content: space-between
+
+.flexRow > span 
+    line-height: 0
+
+.price 
+    margin-right: 3em
+
+.eventLink > a
+    text-decoration: none
+    padding: 0.5rem 1.5rem
+    border-radius: 1.5rem
+    font-weight: bold
+
+.about
+    width: 65%
+    text-align: left
+    margin: 4rem auto
+
+@media screen and (max-width: 600px)
+    .eventContainer
+        flex-direction: column
+
+    .postWrapper, .postWrapper > h1, .postWrapper > p, .postImage, .about, .eventLink
+        width: 100%
+
+    .eventLink
+        padding-top: 2rem
+        
