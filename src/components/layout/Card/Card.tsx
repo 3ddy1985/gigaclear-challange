@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import styles from "./Card.module.sass";
 import { Post } from "../../../../types";
 
-interface CardProps {
+export interface CardProps {
     post: Post;
 }
 

@@ -7,7 +7,14 @@ import styles from "../styles/index.module.sass";
 
 export const getStaticProps = async () => {
   const res = await axios.get("http://localhost:3000/api/posts");
-  const posts: Post[] = res.data;
+  let posts: Post[] = res.data;
+
+  posts = posts.sort((a, b) => {
+    const dateA = new Date(a.dateCreated);
+    const dateB = new Date(b.dateCreated);
+
+    return dateB.getTime() - dateA.getTime();
+  });
 
   return {
     props: {
@@ -15,6 +22,7 @@ export const getStaticProps = async () => {
     }
   }
 }
+
 
 const Home: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ posts }) => {
   return (
